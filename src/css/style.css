@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.video_init {
+	widows: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
