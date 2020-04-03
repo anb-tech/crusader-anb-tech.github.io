@@ -3,13 +3,18 @@ body {
 	font-family: Tahoma, sans-serif;
 }
 
+.intro {
+	max-height: 100vh;
+	overflow: hidden;
+}
+
 .video {
 	position: relative;
 	padding-bottom: 56.25%;
 }
 
-.video_init {
-	widows: 100%;
+.video_intro {
+	width: : 100%;
 	height: auto;
 	position: absolute;
 	top: 0;
