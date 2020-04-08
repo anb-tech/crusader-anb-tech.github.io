@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Беляев Александр">
-  <link rel="icon" href="src/img/favicon2.ico">
-  <title>Starter Template for Bootstrap</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet"	href="src/css/style.css" >
- </head>
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="author" content="Беляев Александр">
+	 <link rel="icon" href="src/img/favicon2.ico">
+	 <title>Сайт о крестоносцах</title>
+	 <link rel="stylesheet" href="src/css/bootstrap.css">
+	 <link rel="stylesheet"	href="src/css/style.css">
+</head>
 
- <body>
- 	<div class="intro">
-			<div class="video">
-				<video class="video_intro" src="src/videos/crusaders.mp4" autoplay muted loop></video>
-			</div>
-			<div class="intro_content">
-				Сайт находится в процессе разработки. Здесь будет портал, посвященный крестовым походам и всему, что с ними связанно. 
-			</div>
+<header>
+		<div class="intro">
+				<div class="video">
+						<video class="video_intro" src="src/videos/crusaders.mp4" autoplay muted loop></video>
+				</div>
+				<div class="intro_content">
+						Сайт находится в процессе разработки. Здесь будет портал, посвященный крестовым походам и всему, что с ними связанно. 
+				</div>
 		</div>
-		<div class="header">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="incon-bar"></span>
-								<span class="incon-bar"></span>
-								<span class="incon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="#">Крестоносец</a>
-						</div>
-						<div class="navbar-collapse collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Домой</a></li>
-								<li><a href="#">Второе</a></li>
-								<li><a href="#">Третье</a></li>
-								<li><a href="#">Четвертое</a></li>
-								<li><a href="#">Пятое</a></li>
-							</ul>
-						</div>
-					</div>
-			</div>
-			<img class="header_img" src="src/img/header_img.png">
-			<div class="header_speach">
-			
-			</div>
-		</div>
+</header>
 
+<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	 		<a class="navbar-brand" href="#">Navbar</a>
+	 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  	<span class="navbar-toggler-icon"></span>
+	 		</button>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- </body>
+		 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			   <ul class="navbar-nav mr-auto">
+			     <li class="nav-item active">
+			       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			     </li>
+			     <li class="nav-item">
+			       <a class="nav-link" href="#">Link</a>
+			     </li>
+			     <li class="nav-item dropdown">
+			       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			         Dropdown
+			       </a>
+			       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			         <a class="dropdown-item" href="#">Action</a>
+			         <a class="dropdown-item" href="#">Another action</a>
+			         <div class="dropdown-divider"></div>
+			         <a class="dropdown-item" href="#">Something else here</a>
+			       </div>
+			     </li>
+			     <li class="nav-item">
+			       <a class="nav-link disabled" href="#">Disabled</a>
+			     </li>
+			   </ul>
+			   <form class="form-inline my-2 my-lg-0">
+			     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			   </form>
+		 	</div>
+		</nav>
+		<img class="header_img" src="src/img/header_img.png">
+		<div class="header_speach"></div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
