@@ -62,7 +62,7 @@ html {
 	color: #fff;
 	margin: 0;
 	text-align: center;
-	margin: 4rem auto;
+	margin: 1rem auto;
 }
 
 .label {
@@ -89,4 +89,8 @@ a:hover, a:focus {
 
 .intro_speach {
 	background-color: #ffffff;
+}
+
+.menu {
+	text-align: center;
 }
