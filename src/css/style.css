@@ -10,6 +10,20 @@ html {
 	-webkit-overflow-scrolling: touch;
 }
 
+.background_main {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background-image: url("../img/background_main.jpg");
+	background-size: cover;
+}
+
+.background_wrap {
+	background-color: rgba(0,0,0,0.4);	
+	z-index: 1;
+
+}
+
 .intro {
 	max-height: 100vh;
 	overflow: hidden;
@@ -66,7 +80,7 @@ html {
 }
 
 .label {
-	background-image:url("../img/label_print.gif"); 
+	background-image: url("../img/label_print.gif"); 
 	background-size: contain;
     width:18px; 
     height:25px; 
@@ -93,4 +107,29 @@ a:hover, a:focus {
 
 .menu {
 	text-align: center;
+}
+
+.btn-history, .btn-persons, .btn-order, .btn-weapon {
+height: 300px;
+width: 300px;
+}
+
+.btn-history {
+background: url(../img/history.webp) no-repeat;
+}
+
+.btn-order {
+background: url(../img/order.jpg) no-repeat;
+
+}
+
+.btn-persons {
+background: url(../img/persons.jpg) no-repeat;
+
+}
+
+
+.btn-weapon {
+background: url(../img/weapon.jpg) no-repeat;
+
 }
