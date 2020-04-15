@@ -11,17 +11,17 @@ html {
 }
 
 .background_main {
-	max-height: 100vh;
-	overflow: hidden;
 	position: relative;
 	background-image: url("../img/background_main.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .background_wrap {
-	background-color: rgba(0,0,0,0.4);	
+	background-color: rgba(0,0,0,0.5);	
 	z-index: 1;
-
 }
 
 .intro {
@@ -93,7 +93,10 @@ a:hover, a:focus {
 	text-decoration: none;
 	outline: 0;
 }
-
+/* Navbar */ 
+.nav_main {
+	background-color: #281b18;
+}
 .navbar-brand {
 	padding: 0;
 	text-transform: uppercase;
@@ -102,34 +105,66 @@ a:hover, a:focus {
 }
 
 .intro_speach {
-	background-color: #ffffff;
+	color: #000;
 }
 
 .menu {
 	text-align: center;
 }
 
+/* Menu */
 .btn-history, .btn-persons, .btn-order, .btn-weapon {
-height: 300px;
-width: 300px;
+	height: 300px;
+	width: 300px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0px;
+	border: 5px solid black;
+	margin-top: 10%;
+
 }
 
+.btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
+	border: 10px solid black;
+	border-color: #332b26;
+} 
 .btn-history {
-background: url(../img/history.webp) no-repeat;
+	background: url(../img/history.webp);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .btn-order {
-background: url(../img/order.jpg) no-repeat;
-
+	background: url(../img/order.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .btn-persons {
-background: url(../img/persons.jpg) no-repeat;
-
+	background: url(../img/persons.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 100px;
 }
 
 
 .btn-weapon {
-background: url(../img/weapon.jpg) no-repeat;
+	background: url(../img/weapon.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.pict_sign {
+	color: #9f9f9f;
+	margin-bottom: 10%
+}
+
+footer {
+	background-color: #100b09;
+	color: #9f9f9f;
 }
