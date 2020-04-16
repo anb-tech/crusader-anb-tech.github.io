@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans&display=swap=Berkshire+Swash&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 html {
 	font-family: 'Cormorant Infant', serif;
 	background-color: #f2f2f2;
@@ -8,6 +9,13 @@ html {
 
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	font-family: 'Cormorant Infant', serif;
+	font-weight: 300;
+	font-size: 25px;
+
 }
 
 .background_main {
@@ -20,7 +28,7 @@ html {
 }
 
 .background_wrap {
-	background-color: rgba(0,0,0,0.5);	
+	background-color: rgba(0,0,0,0.7);	
 	z-index: 1;
 }
 
@@ -39,7 +47,7 @@ html {
 	width: 100%;
 	height: 100%;
 	
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.35);
 
 	position: absolute;
 	top: 0;
@@ -81,38 +89,44 @@ html {
 
 .label {
 	background-image: url("../img/label_print.gif"); 
-	background-size: contain;
-    width:18px; 
-    height:25px; 
+	background-size: cover;
+	;
+    width:25px; 
+    height:35px; 
     display:inline-block;
-    vertical-align:center;
+    vertical-align: center;
 }
 
-a:hover, a:focus {
-	color: #7b7b7b;
-	text-decoration: none;
-	outline: 0;
-}
+
 /* Navbar */ 
-.nav_main {
-	background-color: #281b18;
+.navbar, .navbar-expand-lg, .nav_main{
+	background-image: url("../img/nav_back.jpg"); 
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	border: 4px solid black;
+	box-shadow: inset 0px 0px 50px rgba(0,0,0,1);
+	color: red;
 }
+
 .navbar-brand {
+	font-family: 'Girassol' /* 'Berkshire Swash' */, serif;
+	font-weight: 300;
 	padding: 0;
+	color: #c70e1b /* d50e0d */;
 	text-transform: uppercase;
-	font-size:23px;
+	font-size: 30px;
 	padding-bottom: 0.1%
 }
 
 .intro_speach {
-	color: #000;
+	color: #fff;
 }
 
+/* Menu */
 .menu {
 	text-align: center;
 }
 
-/* Menu */
 .btn-history, .btn-persons, .btn-order, .btn-weapon {
 	height: 300px;
 	width: 300px;
@@ -127,7 +141,8 @@ a:hover, a:focus {
 
 .btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
 	border: 10px solid black;
-	border-color: #332b26;
+	border-color: #1a1a1a;
+	transition: 0.1s linear
 } 
 .btn-history {
 	background: url(../img/history.webp);
@@ -160,11 +175,21 @@ a:hover, a:focus {
 }
 
 .pict_sign {
-	color: #9f9f9f;
+	color: #fff;
 	margin-bottom: 10%
 }
 
+.nav_main_btn{
+	color: #ffe4c9; /* add7dc; */
+	font-weight: 600;
+
+}
 footer {
-	background-color: #100b09;
-	color: #9f9f9f;
+	color: #fff; 
+	font-weight: 500;
+	background-image: url("../img/nav_back.jpg"); 
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	border: 5px solid black;
+	box-shadow: inset 0px 0px 500px rgba(0,0,0,1);
 }
