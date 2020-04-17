@@ -109,17 +109,17 @@ body {
 }
 
 .navbar-brand {
-	font-family: 'Girassol' /* 'Berkshire Swash' */, serif;
+	font-family: 'Girassol', serif;
 	font-weight: 300;
 	padding: 0;
-	color: #c70e1b /* d50e0d */;
+	color: #c70e1b;
 	text-transform: uppercase;
 	font-size: 30px;
 	padding-bottom: 0.1%
 }
 
 .intro_speach {
-	color: #fff;
+	color: #e7d9a2;
 }
 
 /* Menu */
@@ -136,14 +136,16 @@ body {
 	border-radius: 0px;
 	border: 5px solid black;
 	margin-top: 10%;
-
+	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
 }
 
 .btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
 	border: 10px solid black;
-	border-color: #1a1a1a;
-	transition: 0.1s linear
+	border-color: #6c5c1b;
+	cursor: pointer;
+	transition: 0.12s linear
 } 
+
 .btn-history {
 	background: url(../img/history.webp);
 	background-position: 0 0;
@@ -175,17 +177,17 @@ body {
 }
 
 .pict_sign {
-	color: #fff;
+	color: #e7d9a2;
 	margin-bottom: 10%
 }
 
 .nav_main_btn{
-	color: #ffe4c9; /* add7dc; */
+	color: #d8bf5b; /* add7dc; */
 	font-weight: 600;
 
 }
 footer {
-	color: #fff; 
+	color: #e5d69c; 
 	font-weight: 500;
 	background-image: url("../img/nav_back.jpg"); 
 	background-position: 0 0;
