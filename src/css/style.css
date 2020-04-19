@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 *, *:befor, *:after {
 	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
 }
+
 html {
 	font-family: 'Cormorant Infant', serif;
 	background-color: #f2f2f2;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 22px;
 	color: #555;
 	cursor: url(../img/cursor_main.png) 0 0, pointer;
 
@@ -24,7 +27,7 @@ body {
 
 a:hover {
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
-	transition: 0.12s linear
+	transition: 0.12s linear;
 }
 .intro {
 	max-height: 100vh;
@@ -92,18 +95,13 @@ a:hover {
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
-.background_wrap {
-	background-color: rgba(0,0,0,0.7);	
-	z-index: 1;
-}
+.background_wrap { background-color: rgba(0,0,0,0.7); z-index: 1;}
 
 .label {
 	background-image: url("../img/label_print.gif"); 
 	background-size: cover;
-	;
     width:25px; 
     height:35px; 
     display:inline-block;
@@ -135,14 +133,20 @@ a:hover {
 	font-size: 28px;
 
 }
-.intro_speach {
-	color: #e7d9a2;
+
+/* Menu image */
+.navbar-toggler-icon {
+	background-image: url("../img/burger_icon1.png"); 
+	cursor: url(../img/cursor_hand.png) 0 0, pointer;
+	box-sizing: padding-box;
 }
+.navbar-toggler-icon:hover {
+	border: 3px solid #c70e1b;
+}
+.intro_speach { color: #e7d9a2; }
 
 /* Menu */
-.menu {
-	text-align: center;
-}
+.menu {	text-align: center; }
 
 .btn-history, .btn-persons, .btn-order, .btn-weapon {
 	height: 400px;
@@ -155,26 +159,6 @@ a:hover {
 	margin-top: 10%;
 	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
 }
-
-.btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
-	border: 10px solid #6c5c1b;
-	cursor: url(../img/cursor_hand.png) 0 0, pointer;
-	transition: 0.12s linear;
-} 
-
-.btn-history:active, .btn-persons:active, .btn-order:active, .btn-weapon:active {
-	border: 10px solid #6c5c1b;
-	cursor: url(../img/cursor_hand.png) 0 0, pointer;
-	transition: 0.12s linear;
-} 
-
-.btn-history:focus, .btn-persons:focus, .btn-order:focus, .btn-weapon:focus {
-	border: 10px solid #6c5c1b;
-	cursor: url(../img/cursor_hand.png) 0 0, pointer;
-	transition: 0.12s linear;
-	vertical-align: middle;
-} 
-
 .btn-history {
 	background: url(../img/history.webp);
 	background-position: 0 0;
@@ -205,6 +189,12 @@ a:hover {
 	background-size: cover;
 }
 
+.btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
+	border: 10px solid #6c5c1b;
+	cursor: url(../img/cursor_hand.png) 0 0, pointer;
+	transition: 0.12s linear;
+} 
+
 .pict_sign {
 	color: #e7d9a2;
 	margin-bottom: 10%
@@ -217,10 +207,7 @@ a:hover {
 
 .nav_main_btn:hover {
 	color: #00b3ff;
-
 	font-weight: 800;
-	/* text-decoration: underline; */
-	/* padding: 0px; */
 }
 
 footer {
