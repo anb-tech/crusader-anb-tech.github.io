@@ -20,8 +20,11 @@
 			<div class="row align-items-center intro_row">
 				<div class="col-md-6 ml-auto mr-auto">
 					<h1 class="intro_title">
-					Сайт находится в процессе разработки. Здесь будет портал, посвященный крестовым походам и всему, что с ними связанно. 
+					CRUSADER
 					</h1>
+					<h2 class="intro_title">
+					Сайт о крестоносцах
+					</h2>
 				</div>
 			</div>
 		</div>
@@ -30,7 +33,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg nav_main sticky-top">
-	<div class="navbar-brand">Crusa<div class="label"></div>er</div>
+	<div class="navbar-brand">Crusa<div class="shield_label"></div>er</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 	</button>
@@ -47,22 +50,22 @@
 	    <a class="nav-link dropdown-toggle nav_main_btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	     Разделы
 	    </a>
-	   	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	     <a class="dropdown-item" href="#">История походов</a>
-	     <a class="dropdown-item" href="#">Все об орденах</a>
-	     <a class="dropdown-item" href="#">Выдающиеся крестоносцы</a>
-	     <a class="dropdown-item" href="#">Оружие и броня</a>
-	     <div class="dropdown-divider"></div>
-	     <a class="dropdown-item" href="#">Предложения по содержанию</a>
+	   	<div id="main_dropdown_menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+	     <a class="dropdown-item dropdown_item_main" href="#">История походов</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Все об орденах</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Известные крестоносцы</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Вооружение и защита</a>
+	     <div id="main_dropdown_divider" class="dropdown-divider"></div>
+	     <a class="dropdown-item dropdown_item_main" href="#">Предложения по содержанию</a>
 	    </div>
 	   </li>
 	   <li class="nav-item">
-	    <a class="nav-link nav_main_btn" href="#">Disabled</a>
+	    <a class="nav-link nav_main_btn" href="#">Что-то</a>
 	   </li>
  		</ul>
-	 	<form class="form-inline my-2 my-lg-0 main_form">
-	 		<input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
-	  	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+	 	<form class="form-inline my-2 my-lg-0">
+	 		<input id="search_field"class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+	  	<button class="btn btn-outline-success my-2 my-sm-0 menu_search_btn" type="submit">Найти</button>
 	 	</form>
 	</div>
 </nav>
@@ -71,15 +74,17 @@
 <div class="background_wrap">
 	<div class="container">
 		<div class="row justify-content-lg-center">
-			<div class="intro_speach"> Крестовые походы Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam harum repellendus voluptas, minima inventore esse tenetur itaque sit quasi ab qui repellat nostrum dolor commodi aspernatur molestiae libero. Aspernatur ea, culpa quisquam at veniam explicabo id enim alias placeat eaque debitis perspiciatis magnam aliquid assumenda ut dolorem architecto. Dolores quibusdam recusandae, consequatur autem quo placeat amet in, nesciunt, delectus architecto facilis ea eius et. Hic voluptatibus dicta in molestiae, doloremque iste ad facere vero deserunt nihil sunt, perferendis atque pariatur officiis! Quis saepe illo deleniti, provident odio quaerat iure ad distinctio autem excepturi optio ipsa cumque nulla voluptates deserunt nostrum aspernatur magnam maxime illum perspiciatis officia ipsam vitae numquam totam dolorem!</div>
+			<div class="intro_speach"> Покорив мусульманские области Ближнего Востока, сельджуки не остановились и вторглись на византийские территории. В Византии вспыхнула паника. Её император Роман IV попытался остановить завоевателей, но в 1071 г., в битве при городе Манцикерте, византийское войско потерпело сокрушительное поражение, а сам он попал в плен. После этого у византийцев уже не было сил сопротивляться. Сельджуки, постепенно продвигаясь на запад, отняли у Византии почти всю Малую Азию.
+
+			Хлынув в огромном количестве на христианские города и деревни, сельджуки нещадно их грабили, разоряли и жгли. Пылали и рушились церкви и монастыри. Завоеватели оскверняли христианские святыни, подвергали изощрённым пыткам, а затем убивали священников и монахов, принуждали местное население принимать ислам, истребляя тех, кто сопротивлялся. В 1071 г. в руки сельджуков перешёл Иерусалим, город Христа, со всеми главными святынями христиан. Новые хозяева города стали подвергать поруганию христианские храмы, ущемлять права местных христиан, чинить препятствия паломникам: их могли оскорбить, избить, продать в рабство или убить...</div>
 		</div>
 		<div class="menu">
 			<div class="row justify-content-center">
 		    <div class="col-6">
-		      <a class="btn btn-primary btn-history" href="src/history.html" role="button"></a>
+		      <a class="btn btn-history" href="src/history.html" role="button"></a> <!-- btn-primary -->
 		    </div>
 		    <div class="col-6">
-		      <a class="btn btn-primary btn-order" href="src/order.html"></a>
+		      <a class="btn btn-order" href="src/order.html"></a>
 		    </div>
 		    <div class="col-6">
 		      <div class="pict_sign">История походов</div>
@@ -88,13 +93,13 @@
 		      <div class="pict_sign">Все об орденах</div>
 		    </div>
 		    <div class="col-6">
-		      <a class="btn btn-primary btn-persons" href="src/persons.html"></a>
+		      <a class="btn btn-persons" href="src/persons.html"></a>
 		    </div>
 		    <div class="col-6">
-		      <a class="btn btn-primary btn-weapon" href="src/weapon.html"></a>
+		      <a class="btn btn-weapon" href="src/weapon.html"></a>
 		    </div>
 		    <div class="col-6">
-		      <div class="pict_sign">Выдающиеся крестоносцы</div>
+		      <div class="pict_sign">Известные крестоносцы</div>
 		    </div>
 		    <div class="col-6">
 		      <div class="pict_sign">Вооружение и защита</div>
@@ -113,15 +118,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- <script>
-		$(document).scroll (function () {
-			if($(document).scrollTop () > $('header').height())
-				$('nav').addClass('fixed');
-			else
-				$('nav').removeClass ('fixed');
-	
-		});
-	</script> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
