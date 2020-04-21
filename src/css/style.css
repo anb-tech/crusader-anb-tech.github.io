@@ -11,7 +11,7 @@ html {
 	font-family: 'Cormorant Infant', serif;
 	background-color: #f2f2f2;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 21px;
 	color: #555;
 	cursor: url(../img/cursor_main.png) 0 0, pointer;
 
@@ -22,7 +22,7 @@ html {
 body {
 	font-family: 'Cormorant Infant', serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 21px;
 
 }
 
@@ -81,11 +81,10 @@ a:hover {
 }
 
 .intro_title {
-	font-size: 18px;
+	font-size: 21px;
 	color: #fff;
-	margin: 0;
 	text-align: center;
-	margin: 1rem auto;
+	margin: 1rem;
 }
 
 .background_main {
@@ -101,17 +100,14 @@ a:hover {
 .shield_label {
 	background-image: url("../img/label_print.gif"); 
 	background-size: cover;
-    width:22px; 
-    height:28px; 
+    width:23px; 
+    height:30px; 
     display:inline-block;
     vertical-align: center;
 }
 
 
 /* Navbar */ 
-.navbar {
-
-}
 .navbar, .navbar-expand-lg, .nav_main{
 	background-image: url("../img/nav_back.jpg"); 
 	background-position: 0 0;
@@ -122,11 +118,11 @@ a:hover {
 
 .navbar-brand {
 	font-family: 'Girassol', serif;
-	font-weight: 300;
+	font-weight: 800;
 	padding: 0;
 	color: #c70e1b;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 28px;
 }
 
 /*dropdown menu*/
@@ -142,7 +138,7 @@ a:hover {
 }
 /* Menu image */
 .navbar-toggler-icon {
-	background-image: url("../img/burger_icon1.png"); 
+	background-image: url("../img/burger_icon.png"); 
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 	box-sizing: padding-box;
 }
@@ -154,7 +150,7 @@ a:hover {
 .intro_speach { 
 	color: #e7d9a2;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 21px;
 }
 
 /* Menu */
@@ -212,19 +208,19 @@ a:hover {
 	box-shadow: none !important;
 }
 .btn-history:hover, .btn-persons:hover, .btn-order:hover, .btn-weapon:hover {
-	border: 10px solid #6c5c1b;
+	border: 10px solid #b1972c;
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 } 
 
 .btn-history:active, .btn-persons:active, .btn-order:active, .btn-weapon:active {
-	border: 10px solid #6c5c1b;
+	border: 10px solid #b1972c;
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 	outline: none !important;
 	box-shadow: none !important;
 }
 
 .btn-history:focus, .btn-persons:focus, .btn-order:focus, .btn-weapon:focus {
-	border: 10px solid #6c5c1b;
+	border: 10px solid #b1972c;
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 	outline: none !important;
 	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
@@ -252,7 +248,7 @@ a:hover {
 .menu_search_btn {
 	border-color: #fdcf15;
 	margin-left: 5px;
-	height: 38px;
+	height: 42px;
 	padding-top: 5px;
 }
 .menu_search_btn:active {
@@ -280,7 +276,7 @@ a:hover {
 
 #search_field {
 	background-color: #eee4bc;
-	height: 38px;
+	height: 42px;
 }
 
 #search_field:hover {
@@ -291,12 +287,11 @@ a:hover {
 .nav_main_btn, .menu_search_btn {
 	color: #fdcf15;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 21px;
 }
 
 .nav_main_btn:hover {
 	color: #00b3ff;
-	font-weight: 800;
 }
 
 footer {
