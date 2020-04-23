@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans&display=swap=Berkshire+Swash&display=swap" rel="stylesheet">');
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
-*, *:befor, *:after, *:active, *:focus{
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+*, *:befor, *:after, *:active, *:focus {
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
@@ -22,21 +23,20 @@ html {
 body {
 	font-family: 'Cormorant Infant', serif;
 	font-weight: 300;
-	font-size: 21px;
-
 }
 
 a:hover {
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 	transition: 0.12s linear;
+	color: rgb(17,130,250);
 }
+
 .intro {
 	max-height: 100vh;
 	overflow: hidden;
 	position: relative;
 	background: url("../img/crusaders.jpg") center no-repeat;
 	background-size: cover;
-
 }
 
 .intro:after {
@@ -75,24 +75,29 @@ a:hover {
 
 	position: absolute;
 	overflow: hidden;
-	top: 0;
+	top: 30%;
 	left: 0;
 	z-index: 3;
 }
 
+#intro_brand {
+	font-family: 'Girassol', serif;
+	text-align: center;
+	color: #fdcf15;
+	position: relative;
+}
+
 .intro_title {
-	font-size: 21px;
 	color: #fff;
 	text-align: center;
-	margin: 1rem;
 }
 
 .background_main {
 	position: relative;
 	background-image: url("../img/background_main.jpg");
-	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .background_wrap { background-color: rgba(0,0,0,0.7); z-index: 1;}
@@ -118,7 +123,7 @@ a:hover {
 
 .navbar-brand {
 	font-family: 'Girassol', serif;
-	font-weight: 800;
+	font-weight: 500;
 	padding: 0;
 	color: #c70e1b;
 	text-transform: uppercase;
@@ -126,9 +131,8 @@ a:hover {
 }
 
 /*dropdown menu*/
-#main_dropdown_menu {
-	background-color: #eee4bc;
-}
+#main_dropdown_menu { background-color: #eee4bc;}
+
 #main_dropdown_divider {
 	background-color: black;
 	height: 4px;
@@ -136,6 +140,7 @@ a:hover {
 	padding: auto;
 	margin: auto;
 }
+
 /* Menu image */
 .navbar-toggler-icon {
 	background-image: url("../img/burger_icon.png"); 
@@ -152,7 +157,6 @@ a:hover {
 	margin: 3% auto;
 	color: #e7d9a2;
 	font-weight: 400;
-	font-size: 21px;
 	letter-spacing: 1.5px;
 	text-indent: 50px;
 	text-align: justify;
@@ -172,6 +176,7 @@ a:hover {
 	margin-bottom: : 10%;
 	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
 }
+
 .btn-history {
 	background: url(../img/history.webp);
 	background-position: 0 0;
@@ -193,7 +198,6 @@ a:hover {
 	background-size: cover;
 	padding-bottom: 100px;
 }
-
 
 .btn-weapon {
 	background: url(../img/weapon.jpg);
@@ -240,14 +244,43 @@ a:hover {
 .dropdown_item_main {
 	padding-right: 30px;
 }
-.dropdown_item_main:hover {
 
+.sources {
+	position: relative;
+	color: #fdcf15;
+	font-weight: 500;
 }
-.dropdown_item_main:active {
 
+.sources:hover {
+	position: relative;
+	color: #00b3ff;
+	font-weight: 500;
 }
-.dropdown_item_main:focus {
+.descr_sources{
+    display: none;
+    color: #3f3220;
+	margin-left: -150px;
+    padding: 10px;
+    background-color: #eee4bc;
+    height: 200px;
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+.sources:hover .descr_sources{
+    display: block;
+    position: absolute;
+    top: 45px;
+    z-index: 9999;
+    width: 400px;
+} 
+.nav_main_btn, .menu_search_btn {
+	color: #fdcf15;
+	font-weight: 500;
+}
 
+.nav_main_btn:hover {
+	color: #00b3ff;
 }
 
 .menu_search_btn {
@@ -289,14 +322,10 @@ a:hover {
 	box-shadow:  0px 0px 15px rgba(0,179,255,0.6);
 	border: 1px solid rgb(0,179,255);
 }
-.nav_main_btn, .menu_search_btn {
-	color: #fdcf15;
-	font-weight: 500;
-	font-size: 21px;
-}
 
-.nav_main_btn:hover {
-	color: #00b3ff;
+.footer_speach {
+	text-align: center;
+	color: #fdcf15;
 }
 
 footer {
@@ -308,3 +337,123 @@ footer {
 	border: 5px solid black;
 	box-shadow: inset 0px 0px 500px rgba(0,0,0,1);
 }
+
+@media screen and (max-width: 440px) {
+	html {
+	font-family: 'Cormorant Infant', serif;
+	background-color: #f2f2f2;
+	font-weight: 300;
+	font-size: 17px;
+	color: #555;
+	cursor: url(../img/cursor_main.png) 0 0, pointer;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+.intro_row {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	overflow: hidden;
+	top: 20%;
+	left: 0;
+	z-index: 3;
+}
+
+#intro_brand {
+	font-family: 'Girassol', serif;
+	text-align: center;
+	color: #fdcf15;
+	position: relative;
+	font-size: 25px;
+}
+
+.intro_title {
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	margin-top: 17%;
+}
+
+.btn-history, .btn-persons, .btn-order, .btn-weapon {
+	height: 330px;
+	width: 330px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0px;
+	border: 5px solid black;
+	margin-bottom: : 10%;
+	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
+}
+}
+@media (min-width: 440px) and (max-width: 500px) {
+	html {
+	font-family: 'Cormorant Infant', serif;
+	background-color: #f2f2f2;
+	font-weight: 300;
+	font-size: 17px;
+	color: #555;
+	cursor: url(../img/cursor_main.png) 0 0, pointer;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+.intro_row {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	overflow: hidden;
+	top: 18%;
+	left: 0;
+	z-index: 3;
+}
+
+#intro_brand {
+	font-family: 'Girassol', serif;
+	text-align: center;
+	color: #fdcf15;
+	position: relative;
+	font-size: 25px;
+}
+
+.intro_title {
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	margin-top: 20%;
+}
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+		html {
+	font-family: 'Cormorant Infant', serif;
+	background-color: #f2f2f2;
+	font-weight: 300;
+	font-size: 19px;
+	color: #555;
+	cursor: url(../img/cursor_main.png) 0 0, pointer;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+.intro_title {
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	margin-top: 15%;
+}
+
+#intro_brand {
+	font-family: 'Girassol', serif;
+	text-align: center;
+	color: #fdcf15;
+	position: relative;
+	font-size: 25px;
+}
+} 
