@@ -12,69 +12,60 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">сrusa<div class="label"></div>er</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	 	<span class="navbar-toggler-icon"></span>
-		</button>
+<nav class="navbar navbar-expand-lg nav_main sticky-top">
+	<div class="navbar-brand">Crusa<div class="shield_label"></div>er</div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+	</button>
 
- 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	   <ul class="navbar-nav mr-auto">
-     <li class="nav-item active">
-      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-     </li>
-     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       Разделы
-      </a>
-     	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-       <a class="dropdown-item" href="#">История походов</a>
-       <a class="dropdown-item" href="#">Все об орденах</a>
-       <a class="dropdown-item" href="#">Выдающиеся крестоносцы</a>
-       <a class="dropdown-item" href="#">Оружие и броня</a>
-       <div class="dropdown-divider"></div>
-       <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link disabled" href="#">
-      	Disabled</a>
-     </li>
-   </ul>
-   <form class="form-inline my-2 my-lg-0">
-   	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
-   </form>
- 	</div>
-	</nav>
-	<div class="container">
-		<div class="row justify-content-lg-center">
-			<div class="intro_speach">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam harum repellendus voluptas, minima inventore esse tenetur itaque sit quasi ab qui repellat nostrum dolor commodi aspernatur molestiae libero. Aspernatur ea, culpa quisquam at veniam explicabo id enim alias placeat eaque debitis perspiciatis magnam aliquid assumenda ut dolorem architecto. Dolores quibusdam recusandae, consequatur autem quo placeat amet in, nesciunt, delectus architecto facilis ea eius et. Hic voluptatibus dicta in molestiae, doloremque iste ad facere vero deserunt nihil sunt, perferendis atque pariatur officiis! Quis saepe illo deleniti, provident odio quaerat iure ad distinctio autem excepturi optio ipsa cumque nulla voluptates deserunt nostrum aspernatur magnam maxime illum perspiciatis officia ipsam vitae numquam totam dolorem!</div>
-		</div>
-		<div class="menu">
-			<div class="row justify-content-center">
-		    <div class="col-6">
-		      <a href="src/history.html">История походов</a>
-		    </div>
-		    <div class="col-6">
-		      <a href="src/order.html">Все об орденах</a>
-		    </div>
-		    <div class="col-6">
-		      <a href="src/persons.html">Выдающиеся крестоносцы</a>
-		    </div>
-		    <div class="col-6">
-		      <a href="src/weapon.html">Оружие и броня</a>
-		    </div>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+	   <li class="nav-item active">
+	    <a class="nav-link nav_main_btn" href="#">Главная<span class="sr-only">(current)</span></a>
+	   </li>
+	   <li class="nav-item">
+	    <div class="nav-link sources" href="#">Источники
+	    	<div class="descr_sources">
+				Wikipedia:
+				<a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BF%D0%BE%D1%85%D0%BE%D0%B4%D1%8B">Кретовые походы</a>
+				</div>
+			</div>
+	   </li>
+	   <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle nav_main_btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	     Разделы
+	    </a>
+	   	<div id="main_dropdown_menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+	     <a class="dropdown-item dropdown_item_main" href="#">История походов</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Все об орденах</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Известные крестоносцы</a>
+	     <a class="dropdown-item dropdown_item_main" href="#">Вооружение и защита</a>
+	     <div id="main_dropdown_divider" class="dropdown-divider"></div>
+	     <a class="dropdown-item dropdown_item_main" href="#">Предложения по содержанию</a>
 	    </div>
- 		</div>
+	   </li>
+	   <li class="nav-item">
+	    <a class="nav-link nav_main_btn" href="#">Что-то</a>
+	   </li>
+ 		</ul>
+	 	<form class="form-inline my-2 my-lg-0">
+	 		<input id="search_field"class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+	  	<button class="btn btn-outline-success my-2 my-sm-0 menu_search_btn" type="submit">Найти</button>
+	 	</form>
 	</div>
-</body>
-<footer>
+</nav>
+	<section class="white"></section>
+	<section class="parallax-window" data-parallax="scroll" data-image-src="img/teutons_order.jpg"></section>
+	<section class="white"></section>
+	<section class="parallax-window" data-parallax="scroll" data-image-src="img/teutons_order.jpg"></section>
+	<section class="white"></section>
+	<section class="parallax-window" data-parallax="scroll" data-image-src="img/teutons_order.jpg"></section>
+	<section class="white"></section>
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</footer>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/parallax.min.js"></script>
+</body>
 </html>
