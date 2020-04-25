@@ -338,6 +338,12 @@ footer {
 	box-shadow: inset 0px 0px 500px rgba(0,0,0,1);
 }
 
+/*Order page*/
+
+.parallax_section {
+	height: 100vh;
+}
+
 @media screen and (max-width: 440px) {
 	html {
 	font-family: 'Cormorant Infant', serif;
@@ -378,8 +384,8 @@ footer {
 }
 
 .btn-history, .btn-persons, .btn-order, .btn-weapon {
-	height: 330px;
-	width: 330px;
+	height: 250px;
+	width: 250px;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -427,9 +433,21 @@ footer {
 	font-size: 17px;
 	margin-top: 20%;
 }
+
+.btn-history, .btn-persons, .btn-order, .btn-weapon {
+	height: 300px;
+	width: 300px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0px;
+	border: 5px solid black;
+	margin-bottom: : 10%;
+	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
+}
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 1000px) {
 		html {
 	font-family: 'Cormorant Infant', serif;
 	background-color: #f2f2f2;
@@ -442,6 +460,17 @@ footer {
 	-webkit-overflow-scrolling: touch;
 }
 
+.btn-history, .btn-persons, .btn-order, .btn-weapon {
+	height: 250px;
+	width: 259px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0px;
+	border: 5px solid black;
+	margin-bottom: : 10%;
+	box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
+}
 .intro_title {
 	color: #fff;
 	text-align: center;
@@ -457,3 +486,4 @@ footer {
 	font-size: 25px;
 }
 } 
+
