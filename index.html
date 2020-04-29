@@ -11,6 +11,7 @@
  <link rel="stylesheet"	href="src/css/style.css">
 </head>
 
+<body>
 <header>
 	<div class="intro">
 		<div class="video">
@@ -31,7 +32,7 @@
 	</div>
 </header>
 
-<body>
+<bode>
 <nav class="navbar navbar-expand-lg nav_main sticky-top">
 	<div class="navbar-brand">Crusa<div class="shield_label"></div>er</div>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +70,7 @@
 	   </li>
  		</ul>
 	 	<form class="form-inline my-2 my-lg-0">
-	 		<input id="search_field"class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+	 		<input class="form-control mr-sm-2 input_text_field" type="search" placeholder="Поиск по сайту" aria-label="Search">
 	  	<button class="btn btn-outline-success my-2 my-sm-0 menu_search_btn" type="submit">Найти</button>
 	 	</form>
 	</div>
@@ -110,9 +111,15 @@
 </body>
 <footer>
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-12 intro_speach footer_speach">
+		<div class="row text_to_center">
+			<div class="col-12 col-md-12 footer_speach">
 				<p>Есть интересные предложения по содержанию? Обнаружили ошибку или неточность? - пришлите мне сообщение:</p>
+			</div>
+			<div class="col-12 col-md-8 ml-auto mr-auto">
+				<input class="form-control input_text_field" type="text" id="suggest_materials">
+			</div>
+			<div class="col-12 col-md-8 ml-auto mr-auto footer_speach">
+				<button class="accept_button" onclick="income_materials()">Отправить предложение</button>
 			</div>
 		</div>
 	</div>
@@ -121,5 +128,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="src/js/parallax.min.js"></script>
 </footer>
+
 
 </html>
