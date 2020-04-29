@@ -31,6 +31,9 @@ a:hover {
 	color: rgb(17,130,250);
 }
 
+.text_to_center {
+	text-align: center;
+}
 .intro {
 	max-height: 100vh;
 	overflow: hidden;
@@ -113,7 +116,7 @@ a:hover {
 
 
 /* Navbar */ 
-.navbar, .navbar-expand-lg, .nav_main{
+.navbar, .navbar-expand-lg, .nav_main {
 	background-image: url("../img/nav_back.jpg"); 
 	background-position: 0 0;
 	background-repeat: cover;
@@ -153,7 +156,7 @@ a:hover {
 	outline: none;
 } 
 
-.intro_speach { 
+.intro_speach{ 
 	margin: 3% auto;
 	color: #e7d9a2;
 	font-weight: 400;
@@ -312,20 +315,39 @@ a:hover {
 	cursor: url(../img/cursor_hand.png) 0 0, pointer;
 }
 
-#search_field {
+.input_text_field {
+	cursor: url(../img/cursor_feather.png.png) 0 0, pointer !important;
 	background-color: #eee4bc;
 	height: 42px;
 }
 
-#search_field:hover {
+.input_text_field:hover {
+	cursor: url(../img/cursor_feather.png) 0 20, pointer !important;
 	background-color: #eee4bc;
-	box-shadow:  0px 0px 15px rgba(0,179,255,0.6);
+	transition: 0.15s linear;
+	box-shadow:  0px 0px 12px rgba(0,179,255,0.7);
 	border: 1px solid rgb(0,179,255);
 }
 
 .footer_speach {
 	text-align: center;
 	color: #fdcf15;
+	margin: 3% 0% 0% 0%;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+.
+#suggest_materials {
+	margin: 0% 3% 5% 3%;
+}
+
+.accept_button {
+
+}
+
+.accept_button:hover {
+	cursor: url(../img/cursor_hand.png) 0 0, pointer;
+	transition: 0.12s linear;
 }
 
 footer {
@@ -336,12 +358,7 @@ footer {
 	background-repeat: cover;
 	border: 5px solid black;
 	box-shadow: inset 0px 0px 500px rgba(0,0,0,1);
-}
-
-/*Order page*/
-
-.parallax_section {
-	height: 100vh;
+	padding-bottom: 50px;
 }
 
 @media screen and (max-width: 440px) {
